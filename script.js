@@ -6,6 +6,14 @@ window.onload = function colorGuess () {
     const cor4 = document.getElementById('cor4');
     const cor5 = document.getElementById('cor5');
     const cor6 = document.getElementById('cor6');
+    const btnDifficulty = document.getElementById('btn-difficulty');
+    const btnReset = document.getElementById('reset-game');
+
+    let divFrase = document.getElementById('div-frase');
+    let frase = document.createElement('h2');
+    frase.id = 'answer';
+    frase.innerText = 'Escolha uma cor';
+    divFrase.appendChild(frase);
 
     let arrayColors = [];
 
@@ -94,56 +102,77 @@ window.onload = function colorGuess () {
 
     cor1.addEventListener('click', function(){
         if (arrayColors[0] == colorSecret) {
-            alert('Você acertou!')
+            frase.style.color = 'blue';
+            frase.innerText = 'Acertou!';
         }
         else {
-            alert('Você errou!');
+            frase.style.color = 'red';
+            frase.innerText = 'Errou! Tente novamente!';
         }
     });
 
     cor2.addEventListener('click', function(){
         if (arrayColors[1] == colorSecret) {
-            alert('Você acertou!')
+            frase.style.color = 'blue';
+            frase.innerText = 'Acertou!';
         }
         else {
-            alert('Você errou!');
+            frase.style.color = 'red';
+            frase.innerText = 'Errou! Tente novamente!';
         }
     });
 
     cor3.addEventListener('click', function(){
         if (arrayColors[2] == colorSecret) {
-            alert('Você acertou!')
+            frase.style.color = 'blue';
+            frase.innerText = 'Acertou!';
         }
         else {
-            alert('Você errou!');
+            frase.style.color = 'red';
+            frase.innerText = 'Errou! Tente novamente!';
         }
     });
 
     cor4.addEventListener('click', function(){
         if (arrayColors[3] == colorSecret) {
-            alert('Você acertou!')
+            frase.style.color = 'blue';
+            frase.innerText = 'Acertou!';
         }
         else {
-            alert('Você errou!');
+            frase.style.color = 'red';
+            frase.innerText = 'Errou! Tente novamente!';
         }
     });
 
     cor5.addEventListener('click', function(){
         if (arrayColors[4] == colorSecret) {
-            alert('Você acertou!')
+            frase.style.color = 'blue';
+            frase.innerText = 'Acertou!';
         }
         else {
-            alert('Você errou!');
+            frase.style.color = 'red';
+            frase.innerText = 'Errou! Tente novamente!';
         }
     });
 
     cor6.addEventListener('click', function(){
         if (arrayColors[5] == colorSecret) {
-            alert('Você acertou!')
+            frase.style.color = 'blue';
+            frase.innerText = 'Acertou!';
         }
         else {
-            alert('Você errou!');
+            frase.style.color = 'red';
+            frase.innerText = 'Errou! Tente novamente!';
         }
-    }); 
+    });
+
+    btnDifficulty.addEventListener('click', function() {
+
+    });
+
+    btnReset.addEventListener('click', function() {
+        document.location.reload(true);
+    });
+
 }
 

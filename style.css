@@ -1,8 +1,13 @@
+#answer {
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+
 #cor1 {
     border-radius: 100%;
     width: 80px;
     height: 80px;
-    text-align: center;
 }
 
 #cor2 {
@@ -37,32 +42,34 @@
 
 #container-colors {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 h1 {
     text-align: center;
 }
 
-h4 {
+h2 {
     text-align: center;
+    width: auto !important;
 }
 
 p {
     text-align: center;
 }
 
-#container-colors {
-    margin-bottom: 10px;
-}
-
 #container-buttons {
     text-align: center;
 }
 
-#btn-reset {
+#reset-game {
     height: 30px;
 }
 
 #btn-difficulty {
     height: 30px;
+}
+
+#div-frase {
+    margin-bottom: -50px;
 }

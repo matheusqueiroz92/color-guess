@@ -46,3 +46,23 @@ h1 {
 h4 {
     text-align: center;
 }
+
+p {
+    text-align: center;
+}
+
+#container-colors {
+    margin-bottom: 10px;
+}
+
+#container-buttons {
+    text-align: center;
+}
+
+#btn-reset {
+    height: 30px;
+}
+
+#btn-difficulty {
+    height: 30px;
+}
